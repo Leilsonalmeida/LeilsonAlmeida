@@ -107,20 +107,27 @@
         .consultora-section {
             margin: 40px 0;
             display: flex;
-            align-items: center;
+            flex-wrap: wrap; /* Permite quebra em telas menores */
             gap: 20px;
-            flex-wrap: wrap; /* Para responsividade */
+            align-items: flex-start; /* Alinha os itens ao topo */
         }
 
- .consultora-imagem img {
-            width: 300px; /* Ajuste o tamanho conforme necessário */
+        .consultora-content {
+            display: flex;
+            align-items: center; /* Alinha a imagem e a descrição na mesma linha */
+            gap: 20px;
+            width: 100%; /* Garante que o conteúdo ocupe a largura total */
+        }
+
+        .consultora-imagem img {
+            width: 250px; /* Tamanho atual da imagem mantido */
             height: auto;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .consultora-info {
-            max-width: 600px;
+            flex: 1; /* Faz a descrição ocupar o espaço restante */
             background-color: #f5f5f5;
             padding: 20px;
             border-radius: 10px;
@@ -191,13 +198,13 @@
                 margin: 5px 0;
             }
 
-            .consultora-section {
-                flex-direction: column;
+            .consultora-content {
+                flex-direction: column; /* Empilha a imagem e a descrição em telas menores */
                 text-align: center;
             }
 
             .consultora-imagem img {
-                width: 250px; /* Reduz o tamanho em telas menores */
+                width: 200px; /* Reduz o tamanho em telas menores */
             }
         }
     </style>
@@ -243,17 +250,19 @@
                 </div>
             </section>
 
-            <!-- Nova seção da consultora -->
+            <!-- Seção da consultora ajustada -->
             <section class="consultora-section">
                 <h2>Sobre a Consultora</h2>
-                <div class="consultora-imagem">
-                    <img src="foto-consultora.png" alt="Foto da Consultora">
-                </div>
-                <div class="consultora-info">
-                    <h3>Vanessa Mantovani</h3>
-                    <p><strong>Experiência:</strong> 10 anos de experiência na área ambiental</p>
-                    <p><strong>Formação:</strong> Graduada em Engenharia Ambiental e pós graduada em engenharia de segurança do trabalho</p>
-                    <p><strong>Contato:</strong> vanessa.licambiental@gmail.com</p>
+                <div class="consultora-content">
+                    <div class="consultora-imagem">
+                        <img src="foto-consultora.jpg" alt="Foto da Consultora">
+                    </div>
+                    <div class="consultora-info">
+                        <h3>Nome da Consultora</h3>
+                        <p><strong>Experiência:</strong> 10 anos de experiência na área ambiental</p>
+                        <p><strong>Formação:</strong> Graduada em Engenharia Ambiental e pós-graduada em engenharia de segurança do trabalho</p>
+                        <p><strong>Contato:</strong> vanessa.licambiental@gmail.com</p>
+                    </div>
                 </div>
             </section>
         </div>
