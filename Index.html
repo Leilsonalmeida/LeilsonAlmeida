@@ -70,6 +70,22 @@
             text-align: center;
         }
 
+        /* Estilo para a seção de descrição da empresa */
+        .company-description {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .company-description p {
+            font-size: 1.1rem;
+            color: #333;
+            margin: 0;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
         .services {
             margin: 20px 0;
             display: grid;
@@ -107,27 +123,27 @@
         .consultora-section {
             margin: 40px 0;
             display: flex;
-            flex-wrap: wrap; /* Permite quebra em telas menores */
+            flex-wrap: wrap;
             gap: 20px;
-            align-items: flex-start; /* Alinha os itens ao topo */
+            align-items: flex-start;
         }
 
         .consultora-content {
             display: flex;
-            align-items: center; /* Alinha a imagem e a descrição na mesma linha */
+            align-items: center;
             gap: 20px;
-            width: 100%; /* Garante que o conteúdo ocupe a largura total */
+            width: 100%;
         }
 
         .consultora-imagem img {
-            width: 300px; /* Tamanho atual da imagem mantido */
+            width: 300px;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .consultora-info {
-            flex: 1; /* Faz a descrição ocupar o espaço restante */
+            flex: 1;
             background-color: #f5f5f5;
             padding: 20px;
             border-radius: 10px;
@@ -199,12 +215,17 @@
             }
 
             .consultora-content {
-                flex-direction: column; /* Empilha a imagem e a descrição em telas menores */
+                flex-direction: column;
                 text-align: center;
             }
 
             .consultora-imagem img {
-                width: 250px; /* Reduz o tamanho em telas menores */
+                width: 250px;
+            }
+
+            .company-description p {
+                font-size: 1rem;
+                padding: 10px;
             }
         }
     </style>
@@ -216,6 +237,11 @@
 
     <main>
         <div class="container">
+            <!-- Nova seção para a descrição da empresa -->
+            <section class="company-description">
+                <p>Consultoria ambiental que une qualidade, suporte e economia. Aqui, criamos soluções sob medida para o seu negócio, com atendimento dedicado em cada passo e um compromisso real com a sustentabilidade. Garantimos serviços de alto padrão com o melhor preço do mercado. Entre em contato agora para que possamos elaborar uma proposta personalizada para você!</p>
+            </section>
+
             <section class="services">
                 <h2>Nossos Serviços</h2>
                 <div class="service-item">
@@ -250,7 +276,7 @@
                 </div>
             </section>
 
-            <!-- Seção da consultora ajustada -->
+            <!-- Seção da consultora -->
             <section class="consultora-section">
                 <h2>Sobre a Consultora</h2>
                 <div class="consultora-content">
