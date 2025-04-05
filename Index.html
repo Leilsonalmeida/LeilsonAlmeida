@@ -103,6 +103,39 @@
             margin: 10px 0 0;
         }
 
+        /* Estilo para a seção da consultora */
+        .consultora-section {
+            margin: 40px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap; /* Para responsividade */
+        }
+
+ .consultora-imagem img {
+            width: 250px; /* Ajuste o tamanho conforme necessário */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .consultora-info {
+            max-width: 600px;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .consultora-info h3 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+
+        .consultora-info p {
+            margin: 10px 0;
+        }
+
         footer {
             background-color: #587b39;
             color: white;
@@ -157,6 +190,15 @@
             .whatsapp-link {
                 margin: 5px 0;
             }
+
+            .consultora-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .consultora-imagem img {
+                width: 200px; /* Reduz o tamanho em telas menores */
+            }
         }
     </style>
 </head>
@@ -197,7 +239,22 @@
                     <h3>⁠⁠Informação de corte</h3>
                 </div>
                 <div class="service-item">
-                    <h3>⁠⁠Transporte de resíduos classe I e II</h3>
+                    <h3>⁠⁠Transporte de resíduos classe I e II</h3>
+                </div>
+            </section>
+
+            <!-- Nova seção da consultora -->
+            <section class="consultora-section">
+                <h2>Sobre a Consultora</h2>
+                <div class="consultora-imagem">
+                    <img src="foto-consultora.jpg" alt="Foto da Consultora">
+                </div>
+                <div class="consultora-info">
+                    <h3>Nome da Consultora</h3>
+                    <p><strong>Especialidade:</strong> [Insira a especialidade]</p>
+                    <p><strong>Experiência:</strong> [Anos ou descrição]</p>
+                    <p><strong>Formação:</strong> [Insira a formação]</p>
+                    <p><strong>Contato:</strong> [Email ou telefone]</p>
                 </div>
             </section>
         </div>
